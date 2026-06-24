@@ -17,7 +17,7 @@
 
 ### Test User
 - **Email:** user@mail.com
-- **Password:** password123
+- **Password:** sample123
 
 ---
 
