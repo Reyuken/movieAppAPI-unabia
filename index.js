@@ -25,15 +25,12 @@ app.use(express.urlencoded({ extended: true }));
 
 
 const corsOptions = {
-    origin: [
-        'http://localhost:5173',
-        'http://localhost:8000',
-        'https://movie-app-unabia.vercel.app'
-    ],
+    // origin: ['http://localhost:8000'],
+    origin: '*',
     credentials: true,
     optionsSuccessStatus: 200
 };
-
+app.use(cors(corsOptions));
 app.use("/movies", movieRoutes);
 app.use("/users", userRoutes);
 
